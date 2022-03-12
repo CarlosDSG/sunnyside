@@ -120,23 +120,34 @@ header {
     width: auto;
 }
 
+
+/* ----------------------------------------------------------------------------------------------- */
+
 .text-container {
     padding: 3em 0;
-}
-
-.container {
-    display: inherit;
-    max-width: 85%;
-    margin: 0 auto;
-    align-items: inherit;
-    justify-content: inherit;
-    text-align: inherit;
 }
 
 .font-bold {
     color: var(--very-dark-desaturated-blue);
     font-weight: 900;
     font-size: 1.7rem;
+}
+
+
+/* h2  classes: font-bold,title-font// h2 + img clases: grid-img--title, title-font, font-bold   */
+
+.grid-with-img {
+    position: relative;
+}
+
+.grid-img-child {
+    position: absolute;
+    bottom: 3em;
+}
+
+.grid-img--title {
+    color: var(--dark-desaturated-cyan);
+    font-size: 1.5rem;
 }
 
 .grid>.paragraph {
@@ -152,3 +163,26 @@ header {
     color: var(--very-dark-grayish-blue);
     line-height: 1.5;
 }
+
+.img-paragraph {
+    font-size: 0.95em;
+    color: var(--dark-desaturated-cyan);
+}
+
+.dark--blue {
+    /* utility class */
+    color: var(--dark-blue);
+}
+
+.container {
+    display: inherit;
+    max-width: 85%;
+    margin: auto;
+    align-items: inherit;
+    justify-content: inherit;
+    text-align: inherit;
+}
+
+
+/* ver porque se elimino el margin de la clase paragraph "grid>paragraph" y eliminar el desborde que esta generando
+la etiqueta picture*/

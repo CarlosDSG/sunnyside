@@ -43,7 +43,7 @@
         <div class="grid__container">
             <div class="grid item">
                 <picture>
-                    <source media="(min-width:320px )" srcset="./images\mobile\webp\image-transform.webp" />
+                    <source media="(max-width:799px )" srcset="./images\mobile\webp\image-transform.webp" />
                     <source media="(min-width:800px )" srcset="./images\desktop\webp\image-transform.webp" />
                     <img alt="egg-image" />
                 </picture>
@@ -59,7 +59,7 @@
             </div>
             <div class="grid item">
                 <picture>
-                    <source media="(min-width:320px )" srcset="./images\mobile\webp\image-stand-out.webp" />
+                    <source media="(max-width:799px )" srcset="./images\mobile\webp\image-stand-out.webp" />
                     <source media="(min-width:800px )" srcset="./images\desktop\webp\image-stand-out.webp" />
                     <img src="" alt="" />
                 </picture>
@@ -73,27 +73,31 @@
                     <a class="title-font font-bold font--size" href="#">Learn more</a>
                 </div>
             </div>
-            <div class="grid item text-aling">
+            <div class="grid grid-with-img text-aling">
                 <picture>
-                    <source media="(min-width:320px )" srcset="./images\mobile\webp\image-graphic-design.webp" />
+                    <source media="(max-width:799px )" srcset="./images\mobile\webp\image-graphic-design.webp" />
                     <source media="(min-width:800px )" srcset="./images\desktop\webp\image-graphic-design.webp" />
                     <img alt="" />
                 </picture>
-                <h2 class="title-font">Graphic Design</h2>
-                <p>
-                    Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-                </p>
+                <div class="grid grid-img-child">
+                    <h2 class="grid-img--title title-font font-bold">Graphic Design</h2>
+                    <p class="paragraph img-paragraph color-">
+                        Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+                    </p>
+                </div>
             </div>
-            <div class="grid item text-aling">
+            <div class="grid grid-with-img text-aling">
                 <picture>
-                    <source media="(min-width:320px )" srcset="./images\mobile\webp\image-photography.webp" />
+                    <source media="(max-width:799px )" srcset="./images\mobile\webp\image-photography.webp" />
                     <source media="(min-width:800px )" srcset="./images\desktop\webp\image-photography.webp" />
                     <img alt="" />
                 </picture>
-                <h2 class="title-font">Photography</h2>
-                <p>
-                    Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-                </p>
+                <div class="grid grid-img-child">
+                    <h2 class="grid-img--title dark--blue title-font font-bold">Photography</h2>
+                    <p class="paragraph img-paragraph dark--blue">
+                        Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+                    </p>
+                </div>
             </div>
         </div>
     </main>
