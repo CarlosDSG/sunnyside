@@ -132,6 +132,9 @@ header {
 
 /* ----------------------------------------------------------------------------------------------- */
 
+
+/* -------------------------------------    MAIN   ----------------------------------------------- */
+
 .text-container {
     padding: 3em 0;
 }
@@ -219,5 +222,91 @@ comenzare a trabajar con displaz */
 }
 
 
-/*  eliminar el desborde que esta generando
-la etiqueta picture*/
+/* -----------------------------------------MAIN END------------------------------------------------ */
+
+
+/* ------------------------------------SECCTION TESTIMONIAL----------------------------------------- */
+
+.testimonial {
+    padding: 3em 0;
+}
+
+article {
+    margin: 3em 0;
+}
+
+.testimonial-title {
+    margin-bottom: 3.5em;
+    color: var(--grayish-blue);
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.article__paragraph {
+    margin: 1.55em 0;
+}
+
+.testimonials__article>h4 {
+    font-size: 1.1em;
+    margin-bottom: 0.7em;
+}
+
+.testimonials__article>span {
+    color: var(--grayish-blue);
+}
+
+.article-img__container>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.grid-two {
+    display: grid;
+    grid-template: repeat(2, auto) / 1fr 1fr;
+}
+
+footer {
+    justify-content: center;
+    padding: 3em;
+    background: #8fd6c5;
+}
+
+.footer__container {
+    width: 100%;
+}
+
+.footer__container>h5 {
+    margin-bottom: 1em;
+    font-size: 2.1em;
+    color: var(--dark-desaturated-cyan);
+}
+
+.footer__nav {
+    width: inherit;
+    margin-bottom: 3.5em;
+}
+
+.moderate--cyan {
+    color: var(--dark-moderate-cyan);
+}
+
+.footer__nav>ul {
+    justify-content: space-between;
+}
+
+.nav__icon ul {
+    justify-content: center;
+}
+
+.nav__icon li {
+    margin: 0 15px;
+}
+
+.social-icons {
+    object-fit: contain;
+}
+
+
+/* acomoddar la seccion del footer  para que se vean bien los iconos y las listas de navegacion */
