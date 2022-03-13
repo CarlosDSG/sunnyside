@@ -59,16 +59,25 @@ img {
 
 /* ------------------------UTILITY CLASSES------------------------------------ */
 
-.flex {
-    display: flex;
-}
-
 .background {
     background: var(--white);
 }
 
+.container {
+    display: inherit;
+    max-width: 85%;
+    margin: auto;
+    align-items: inherit;
+    justify-content: inherit;
+    text-align: inherit;
+}
+
 .color-white {
     color: var(--white);
+}
+
+.flex {
+    display: flex;
 }
 
 .title-font {
@@ -142,7 +151,8 @@ header {
 
 .grid-img-child {
     position: absolute;
-    bottom: 3em;
+    bottom: 2em;
+    padding: 0 1em;
 }
 
 .grid-img--title {
@@ -165,7 +175,7 @@ header {
 }
 
 .img-paragraph {
-    font-size: 0.95em;
+    font-size: 0.9em;
     color: var(--dark-desaturated-cyan);
 }
 
@@ -174,15 +184,40 @@ header {
     color: var(--dark-blue);
 }
 
-.container {
-    display: inherit;
-    max-width: 85%;
-    margin: auto;
-    align-items: inherit;
-    justify-content: inherit;
-    text-align: inherit;
+
+/* los selectores de arriba son para darle estilos a la seccion del grid de aqui para abajo 
+comenzare a trabajar con displaz */
+
+.grid__container {
+    display: grid;
+    grid-template: repeat(6, auto) / 1fr;
+    grid-template-areas: 'egg' 'first-article' 'glass' 'second-article' 'fruits' 'orang';
+}
+
+.grid.one {
+    grid-area: egg;
+}
+
+.grid.two {
+    grid-area: first-article;
+}
+
+.grid.three {
+    grid-area: glass;
+}
+
+.grid.four {
+    grid-area: second-article;
+}
+
+.grid.five {
+    grid-area: fruits;
+}
+
+.grid.six {
+    grid-area: orang;
 }
 
 
-/* ver porque se elimino el margin de la clase paragraph "grid>paragraph" y eliminar el desborde que esta generando
+/*  eliminar el desborde que esta generando
 la etiqueta picture*/
