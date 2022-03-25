@@ -92,7 +92,7 @@ img {
 /* //////////////////////HEADER///////////////////////////////////////////// */
 
 header {
-    background: url(../images/mobile/webp/image-header.webp);
+    background-image: url(../images/mobile/webp/image-header.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -109,9 +109,31 @@ header {
     width: 8.5em;
 }
 
+
+/* .submenu {
+    position: relative;
+} */
+
 .desplegable-menu {
     display: none;
+    padding: 0.5em;
+    background-color: rgba(0, 0, 0, 0.383);
 }
+
+.desplegable-menu li {
+    margin: 7px 0;
+}
+
+.desplegable-menu a {
+    color: #fff;
+}
+
+
+/* .submenu:hover .desplegable-menu {
+    display: block;
+    height: auto;
+    z-index: 100;
+} */
 
 .header__title {
     font-size: 2.2rem;
@@ -221,6 +243,27 @@ comenzare a trabajar con displaz */
     grid-area: orang;
 }
 
+.learn {
+    position: relative;
+}
+
+.learn::before {
+    content: '';
+    position: absolute;
+    z-index: -30;
+    bottom: -2px;
+    left: -7px;
+    opacity: 0.3;
+    width: 115%;
+    height: 10px;
+    border-radius: 10px;
+    background: var(--soft-red);
+}
+
+.learn.btn::before {
+    background: rgb(255, 255, 0.6);
+}
+
 
 /* -----------------------------------------MAIN END------------------------------------------------ */
 
@@ -232,7 +275,7 @@ comenzare a trabajar con displaz */
 }
 
 article {
-    margin: 3em 0;
+    margin: 1.75em 0;
 }
 
 .testimonial-title {
@@ -309,4 +352,74 @@ footer {
 }
 
 
-/* acomoddar la seccion del footer  para que se vean bien los iconos y las listas de navegacion */
+/* MEDIA QUERYS */
+
+@media screen and (min-width: 1020px) {
+    header {
+        background-image: url(../images/desktop/webp/image-header.webp);
+    }
+    .bars-icon {
+        display: none;
+    }
+    .desplegable-menu {
+        display: flex;
+        background-color: transparent;
+    }
+    .desplegable-menu li {
+        margin: 0;
+        margin-left: 20px;
+    }
+    .desplegable-menu li>.contact-btn {
+        margin-left: 15px;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        color: #000;
+        background-color: #fff;
+        padding: 0.8rem 1.3rem;
+        border-radius: 30px;
+        transition: 300ms;
+    }
+    .desplegable-menu li>.contact-btn:hover {
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    /* grid section */
+    .grid__container {
+        display: grid;
+        grid-template: repeat(3, auto) / 1fr 1fr;
+        grid-template-areas: 'first-article egg' 'glass second-article' 'fruits orang';
+    }
+    .grid {
+        padding: 0;
+    }
+    .text-container {
+        font-size: 1.2em;
+        text-align: initial;
+    }
+    .grid-img-child {
+        font-size: 1.1em;
+        margin: 0 7em;
+    }
+    .flex-desktop {
+        display: flex;
+    }
+    .testimonial h3 {
+        margin-bottom: 1.5rem;
+    }
+    .testimonials__article {
+        margin-inline: 10px;
+    }
+    /* grid secction two */
+    .grid-two {
+        display: grid;
+        grid-template: auto / repeat(4, 1fr);
+    }
+    /* footer */
+    footer a:hover {
+        color: #fff;
+    }
+    .footer__nav {
+        width: 22%;
+        margin-inline: auto;
+    }
+}

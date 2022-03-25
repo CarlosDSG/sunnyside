@@ -18,19 +18,18 @@
                 <figure class="logo-container">
                     <img src="./images/logo.svg" alt="logo" />
                 </figure>
-                <nav>
-                    <li>
-                        <a href="#"><i class="fa fa-bars color-white"></i>
-								<ul class="desplegable-menu">
-									<li>
-										<a class="menu__link" href="#">About</a>
-                    </li>
-                    <li><a class="menu__link" href="#">Services</a></li>
-                    <li><a class="menu__link" href="#">Projects</a></li>
-                    <li><a class="contact-btn" href="#">Contact</a></li>
+                <nav id="header__menu">
+                    <ul>
+                        <li class="submenu">
+                            <a class="bars-icon" href="#"><i class="fa fa-bars color-white"></i> </a>
+                            <ul class="desplegable-menu">
+                                <li><a class="menu__link" href="#">About</a></li>
+                                <li><a class="menu__link" href="#">Services</a></li>
+                                <li><a class="menu__link" href="#">Projects</a></li>
+                                <li><a class="title-font contact-btn" href="#contact">Contact</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                    </a>
-                    </li>
                 </nav>
             </div>
             <h1 class="header__title text-aling title-font color-white">we are creatives</h1>
@@ -54,7 +53,7 @@
                     <p class="paragraph text--gray">
                         We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
                     </p>
-                    <a class="title-font font-bold font--size" href="#">Learn more</a>
+                    <a class="learn btn title-font font-bold font--size" href="#">Learn more</a>
                 </div>
             </div>
 
@@ -71,7 +70,7 @@
                     <p class="paragraph">
                         Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
                     </p>
-                    <a class="title-font font-bold font--size" href="#">Learn more</a>
+                    <a class="learn title-font font-bold font--size" href="#">Learn more</a>
                 </div>
             </div>
             <div class="grid five grid-with-img text-aling">
@@ -104,44 +103,46 @@
     </main>
     <section class="testimonial text-aling">
         <h3 class="title-font font-bold testimonial-title">Client testimonials</h3>
-        <div class="container">
-            <article class="testimonials__article">
-                <div class="article-img__container">
-                    <img src="./images/image-emily.jpg" alt="emily-photo" />
-                </div>
-                <p class="article__paragraph paragraph">
-                    We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-                </p>
-                <h4 class="title-font font-bold">Emily R.</h4>
-                <span>Marketing Director</span>
-            </article>
-            <article class="testimonials__article">
-                <div class="article-img__container">
-                    <img src="./images/image-thomas.jpg" alt="thomas-photo" />
-                </div>
-                <p class="article__paragraph paragraph">
-                    Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-                </p>
-                <h4 class="title-font font-bold">Thomas S.</h4>
-                <span>Chief Operating Officer</span>
-            </article>
-            <article class="testimonials__article">
-                <div class="article-img__container">
-                    <img src="./images/image-jennie.jpg" alt="ennie-photo" />
-                </div>
-                <p class="article__paragraph paragraph">
-                    Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-                </p>
-                <h4 class="title-font font-bold">Jennie F.</h4>
-                <span>Business Owner</span>
-            </article>
+        <div class="flex-desktop">
+            <div class="container">
+                <article class="testimonials__article">
+                    <div class="article-img__container">
+                        <img src="./images/image-emily.jpg" alt="emily-photo" />
+                    </div>
+                    <p class="article__paragraph paragraph">
+                        We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+                    </p>
+                    <h4 class="title-font font-bold">Emily R.</h4>
+                    <span>Marketing Director</span>
+                </article>
+                <article class="testimonials__article">
+                    <div class="article-img__container">
+                        <img src="./images/image-thomas.jpg" alt="thomas-photo" />
+                    </div>
+                    <p class="article__paragraph paragraph">
+                        Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+                    </p>
+                    <h4 class="title-font font-bold">Thomas S.</h4>
+                    <span>Chief Operating Officer</span>
+                </article>
+                <article class="testimonials__article">
+                    <div class="article-img__container">
+                        <img src="./images/image-jennie.jpg" alt="ennie-photo" />
+                    </div>
+                    <p class="article__paragraph paragraph">
+                        Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+                    </p>
+                    <h4 class="title-font font-bold">Jennie F.</h4>
+                    <span>Business Owner</span>
+                </article>
+            </div>
         </div>
     </section>
     <div class="grid-two">
         <div class="item a">
             <picture>
                 <source media="(max-width:799px )" srcset="./images\mobile\webp\image-gallery-milkbottles.webp" />
-                <source media="(max-width:800px )" srcset="./images\desktop\webp\image-gallery-milkbottles.webp" />
+                <source media="(min-width:800px )" srcset="./images\desktop\webp\image-gallery-milkbottles.webp" />
                 <img lazy="loading" alt="milk-grid-image" />
             </picture>
         </div>
@@ -161,13 +162,13 @@
         </div>
         <div class="item d">
             <picture>
-                <source media="(max-width:799px )" srcset="./images\mobile\image-gallery-sugar-cubes.jpg" />
-                <source media="(min-width:800px )" srcset="./images\desktop\image-gallery-sugar-cubes.jpg" />
+                <source media="(max-width:799px )" srcset="./images\mobile\webp\image-gallery-sugar-cubes.webp" />
+                <source media="(min-width:800px )" srcset="./images\desktop\webp\image-gallery-sugar-cubes.webp" />
                 <img lazy="loading" alt="idk" />
             </picture>
         </div>
     </div>
-    <footer class="flex text-aling">
+    <footer id="contact" class="flex text-aling">
         <div class="footer__container">
             <h5 class="title-font font-bold">sunnyside</h5>
             <div class="footer__nav">
